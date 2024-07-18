@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="bi bi-x" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list" onclick="showMenu()"></i>
+      </nav>
+      <h1>OUR CERTIFICATE & ONLINE PROGRAM FOR 2024</h1>
+    </section>
+
+    <!--------------------- BLog Pge Content-------------->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/certificate.jpg" />
+          <h2>OUR CERTIFICATE & ONLINE PROGRAM FOR 2024</h2>
+          <p>
+            Happy Graduation See You On The Top And Good Luck For Your Company,
+            For your live, and For YOur Family God Bless You More.
+          </p>
+          <br />
+          <p>
+            Hai, Marcella Thankyou for join in UNTAR University See You On The
+            Top and Congrats Marcella Yoau are the best Student In Here. I
+            always support you to your job, family and everything. Good Luck For
+            You Marcella. GBU.
+          </p>
+          <br />
+          <p>
+            Hai, evveryone this is Untar Of University please welcome and join
+            us to Untar Of University. I will teach you to be a good people,
+            good skill, good attitude, and I will teach you how to make a very
+            responsive, good, nice website use HTML, CSS, JS.
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave A Comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Business Analitics</span>
+            <span>22</span>
+          </div>
+          <div>
+            <span>Information System</span>
+            <span>28</span>
+          </div>
+          <div>
+            <span>Data Science</span>
+            <span>30</span>
+          </div>
+          <div>
+            <span>Software Development</span>
+            <span>20</span>
+          </div>
+          <div>
+            <span>Game Development</span>
+            <span>25</span>
+          </div>
+          <div>
+            <span>Machine Learning</span>
+            <span>33</span>
+          </div>
+          <div>
+            <span>Database System</span>
+            <span>29</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- FOoter----------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        This is a Website Multifungsion, please come and join us to learn how to
+        make some very good website use HTML, CSS, and JS.
+      </p>
+      <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+      <p>Made With <i class="bi bi-heart"></i>By Easy Tutorials</p>
+    </section>
+
+    <!--------------------Javascript Toggle Menu------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
